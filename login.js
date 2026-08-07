@@ -10,11 +10,11 @@ loginButton.addEventListener('click', (event) => {
     const password = passwordInput.value;
 
     if (email=== "") {
-        errorMessage.textContent = "Please enter your Email.";
+        errorMessage.textContent = "* Please enter your Email.";
     }
 
     else if (password=== ""){
-        errorMessage.textContent = "Please enter your Password.";
+        errorMessage.textContent = "* Please enter your Password.";
     }
 
     else {
