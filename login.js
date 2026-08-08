@@ -1,7 +1,9 @@
 const loginButton = document.querySelector('.login-button');
 const emailInput = document.querySelector('.email-input');
 const passwordInput = document.querySelector('.password-input');
-const errorMessage = document.querySelector('.error-message')
+const errorMessage = document.querySelector('.error-message');
+const testEmail = "test@example.com";
+const testPassword = "1234";
 
 loginButton.addEventListener('click', (event) => {
     event.preventDefault();
@@ -17,15 +19,12 @@ loginButton.addEventListener('click', (event) => {
         errorMessage.textContent = "* Please enter your Password.";
     }
 
-    else {
-    errorMessage.textContent = "Login Successful";
+    else if (email === testEmail && password === testPassword) {
+        window.location.href = "dashboard.html";
     }
 
-    if (email !== "" && password !==""){
-        console.log("There is an email");
-
-}
-
-
+    else {
+        errorMessage.textContent = "Incorrect email or password.";
+    }
 
 });
