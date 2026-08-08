@@ -1,3 +1,52 @@
-body {
-    text-decoration: underline;
+* {
+    box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 220px;
+    padding: 30px 20px;
+    border: 1px solid black;
+}
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    display: flex;
+    border: 1px solid black;
+    padding: 10px 15px;
+    text-decoration: none;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.sidebar a img {
+    width: 24px;
+    height: 24px;
+    color: black;
+    filter: brightness(0);
+}
+
