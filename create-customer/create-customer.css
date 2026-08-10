@@ -49,39 +49,3 @@ body {
     color: black;
     filter: brightness(0);
 }
-
-.customer-row {
-    display: flex;
-    align-items: center;
-
-    padding: 15px 20px;
-
-    border: 1px solid black;
-    border-radius: 8px;
-
-    text-decoration: none;
-    color: black;
-}
-
-#customer-search {
-    width: 50%;
-    height: 45px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.customer-toolbar {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-.create-customer-button {
-    display: inline-block;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 12px 20px;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-}
