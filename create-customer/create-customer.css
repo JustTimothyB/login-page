@@ -49,3 +49,35 @@ body {
     color: black;
     filter: brightness(0);
 }
+
+.customer-form {
+    display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 20px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-field input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 10px;
+}
+
+.create-a-customer {
+    border-radius: 10px;
+    height: 50px;
+    max-width: 800px;
+}
+
+.address-row {
+    grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-columns: 2.25fr 1fr 1fr;
+    gap: 20px;
+}
